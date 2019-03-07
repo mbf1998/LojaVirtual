@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="br.edu.recife.ifpe_LojaVirtual_war_1.0-SNAPSHOTPU" transaction-type="JTA">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <jta-data-source>java:app/BDescorp</jta-data-source>
+    <class>br.edu.recife.ifpe.entities.Endereco</class>
+    <class>br.edu.recife.ifpe.entities.TipoUsuario</class>
+    <class>br.edu.recife.ifpe.entities.Usuario</class>
+    <class>br.edu.recife.ifpe.entities.CorProduto</class>
+    <class>br.edu.recife.ifpe.entities.ImagemProduto</class>
+    <class>br.edu.recife.ifpe.entities.Pedido</class>
+    <class>br.edu.recife.ifpe.entities.Produto</class>
+    <class>br.edu.recife.ifpe.entities.TamanhoProduto</class>
+    <class>br.edu.recife.ifpe.entities.TipoProduto</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/descorp"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="admin"/>
+      <property name="eclipselink.logging.level" value="FINE"/>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
